@@ -3,7 +3,7 @@ import {
   getProfile,
   updateProfile,
   uploadResume,
-} from '../../services/ProfileService';
+} from '../../services/profileService';
 
 function Profile() {
   const [profile, setProfile] = useState(null);
