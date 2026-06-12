@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getJobs } from '../../services/jobservice';
+import { getJobs } from '../../services/jobService';
 import { applyForJob } from '../../services/applicationService';
 
 function Jobs() {
