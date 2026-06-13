@@ -18,9 +18,7 @@ function Navbar() {
     <nav className="bg-white shadow-md">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <h1 className="text-2xl font-bold text-blue-600">
-            Job Tracker
-          </h1>
+          <h1 className="text-2xl font-bold text-blue-600">Job Tracker</h1>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
@@ -43,19 +41,14 @@ function Navbar() {
             )}
 
             {user?.role === 'user' && (
-              <Link
-                to="/my-applications"
-                className="hover:text-blue-600"
-              >
+              <Link to="/my-applications" className="hover:text-blue-600">
                 Applications
               </Link>
             )}
 
             {user ? (
               <>
-                <p className="text-blue-500 font-semibold">
-                  {user.name}
-                </p>
+                <p className="text-blue-500 font-semibold">{user.name}</p>
 
                 <button
                   onClick={handleLogout}
@@ -132,9 +125,7 @@ function Navbar() {
 
             {user ? (
               <>
-                <p className="text-blue-500 font-semibold">
-                  {user.name}
-                </p>
+                <p className="text-blue-500 font-semibold">{user.name}</p>
 
                 <button
                   onClick={handleLogout}

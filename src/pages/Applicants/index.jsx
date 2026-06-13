@@ -14,7 +14,7 @@ function Applicants() {
     try {
       const response = await getApplicantsForJob(jobId);
 
-      console.log(response.data);
+      
 
       setApplications(response.data.applications);
     } catch (error) {

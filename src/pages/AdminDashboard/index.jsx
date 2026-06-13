@@ -102,7 +102,7 @@ function AdminDashboard() {
     try {
       const response = await deleteJob(jobId);
 
-      console.log(response.data);
+      
 
       setMessage('Job Deleted Successfully');
 

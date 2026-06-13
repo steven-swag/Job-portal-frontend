@@ -22,7 +22,7 @@ function Profile() {
     try {
       const response = await getProfile();
 
-      console.log(response.data);
+      
 
       setProfile(response.data.Users);
 

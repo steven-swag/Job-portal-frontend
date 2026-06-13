@@ -8,7 +8,7 @@ function MyApplications() {
     try {
       const response = await getMyApplications();
 
-      console.log(response.data);
+      
 
       setApplications(response.data.applications);
     } catch (error) {
