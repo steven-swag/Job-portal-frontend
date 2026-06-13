@@ -14,8 +14,6 @@ function Applicants() {
     try {
       const response = await getApplicantsForJob(jobId);
 
-      
-
       setApplications(response.data.applications);
     } catch (error) {
       console.log(error);
@@ -58,10 +56,9 @@ function Applicants() {
               <p className="mt-2">
                 <strong>Resume:</strong>{' '}
                 <a
-                  href={`http://localhost:5000/${application.applicant.resume}`}
+                  href={application.user.resume}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-blue-600 underline"
                 >
                   View Resume
                 </a>
