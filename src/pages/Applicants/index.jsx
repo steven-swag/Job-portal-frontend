@@ -56,9 +56,10 @@ function Applicants() {
               <p className="mt-2">
                 <strong>Resume:</strong>{' '}
                 <a
-                  href={application.user.resume}
+                  href={application.applicant?.resume}
                   target="_blank"
                   rel="noreferrer"
+                  className="text-blue-600 underline"
                 >
                   View Resume
                 </a>
